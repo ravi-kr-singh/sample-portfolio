@@ -1,622 +1,641 @@
-*, *:before, *:after{
+*,
+*:before,
+*:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
-
 }
 html,
 body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-.row{
+.row {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
-.col-0-5{
+.col-0-5 {
   width: 4.16%;
 }
-.col-1{
-  width:8.33%;
+.col-1 {
+  width: 8.33%;
 }
-.col-1-5{
-  width:12.5%;
+.col-1-5 {
+  width: 12.5%;
 }
-.col-2{
-  width:16.66%;
+.col-2 {
+  width: 16.66%;
 }
-.col-3{
-  width:25%;
+.col-3 {
+  width: 25%;
 }
-.col-4{
-  width:33.33%;
+.col-4 {
+  width: 33.33%;
 }
-.col-5{
-  width:41.66%;
+.col-5 {
+  width: 41.66%;
 }
-.col-6{
-  width:50%;
+.col-6 {
+  width: 50%;
 }
-.col-7{
-  width:58.33%;
+.col-7 {
+  width: 58.33%;
 }
-.col-8{
-  width:66.66%;
+.col-8 {
+  width: 66.66%;
 }
-.col-9{
-  width:75%;
+.col-9 {
+  width: 75%;
 }
-.col-9-5{
-  width:79.16%;
+.col-9-5 {
+  width: 79.16%;
 }
-.col-10{
-  width:83.33%;
+.col-10 {
+  width: 83.33%;
 }
-.col-11{
-  width:91.66%;
+.col-11 {
+  width: 91.66%;
 }
-.col-12{
-  width:100%;
+.col-12 {
+  width: 100%;
 }
-.Upperstrip{
+.Upperstrip {
   position: fixed;
   top: 0px;
   left: 0px;
-  height:76px;
-  background-image: linear-gradient(-90deg,rgba(34, 167, 240, 1),rgba(83, 51, 237, 1));
-  box-shadow: 10px 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-  z-index:1;
+  height: 76px;
+  background-image: linear-gradient(
+    -90deg,
+    rgba(34, 167, 240, 1),
+    rgba(83, 51, 237, 1)
+  );
+  box-shadow: 10px 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  z-index: 1;
 }
 
-.buttons{
-  width:80%;
-  height:45px;
+.buttons {
+  width: 80%;
+  height: 45px;
   font-size: 16px;
-  font-weight:bolder;
+  font-weight: bolder;
   font-family: "Roboto", sans-serif;
   background-color: inherit;
-  border:0px;
-  margin:16px;
+  border: 0px;
+  margin: 16px;
   letter-spacing: 3px;
   color: white;
   transition-property: all;
   transition-duration: 0.25s;
   transition-delay: 0.1s;
 }
-.buttons:hover{
+.buttons:hover {
   width: 85%;
-  height:45px;
+  height: 45px;
   cursor: pointer;
   letter-spacing: 7px;
-  box-shadow: 5px 6px 8px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 5px 6px 8px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
   background-color: white;
   color: black;
 }
-.photo_detail{
-  height:100%;
+.photo_detail {
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
 }
-.topimage{
+.topimage {
   margin-left: 30px;
   margin-top: 5px;
-  width:65px;
-  height:65px;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
 }
-.topname{
-  margin:30px 0px 20px 10px;
+.topname {
+  margin: 30px 0px 20px 10px;
   letter-spacing: 5px;
-  font-weight:bolder;
+  font-weight: bolder;
   font-size: 16px;
   font-weight: bolder;
   font-family: "Roboto", sans-serif;
-  color:white;
+  color: white;
   text-transform: uppercase;
 }
-.topimage:hover{
+.topimage:hover {
   cursor: pointer;
 }
 
 @media only screen and (max-width: 875px) {
-  .Upperstrip{
+  .Upperstrip {
     background-image: none;
     background-color: rgba(25, 181, 254, 1);
-    height:55px;
-    width:100%;
+    height: 55px;
+    width: 100%;
     position: static;
   }
-  .topname{
+  .topname {
     display: none;
   }
-  .photo_detail{
-    height:50px;
-    width:12.5%;
+  .photo_detail {
+    height: 50px;
+    width: 12.5%;
   }
-  .imageholder{
-    width:100%;
-    height:100%;
+  .imageholder {
+    width: 100%;
+    height: 100%;
   }
-  .topimage{
+  .topimage {
     margin: 8px 0px 0px 5px;
-    height:38px;
-    width:38px;
+    height: 38px;
+    width: 38px;
     image-orientation: center;
   }
-  .col-2{
-    width:29.16%;
-    height:40px;
+  .col-2 {
+    width: 29.16%;
+    height: 40px;
   }
-  .buttons,.buttons:hover{
+  .buttons,
+  .buttons:hover {
     letter-spacing: 1px;
-    width:82%;
-    height:35px;
+    width: 82%;
+    height: 35px;
     margin: 10px 5px 10px 5px;
     text-align: center;
     font-size: 13px;
   }
-  .buttons:hover{
+  .buttons:hover {
     letter-spacing: 2px;
     background-color: white;
     color: black;
   }
 }
-.centerpart{
+.centerpart {
   margin-top: 75px;
   padding-top: 200px;
-  height:550px;
+  height: 550px;
 }
-.subheading{
+.subheading {
   margin-top: 15px;
   margin-bottom: 0px;
   letter-spacing: 5px;
   font-family: "Roboto", sans-serif;
   text-transform: capitalize;
   text-align: center;
-  color: rgba(0,0,0, 0.7);
+  color: rgba(0, 0, 0, 0.7);
   font-size: 20px;
 }
-.mainheading{
+.mainheading {
   margin-top: 18px;
   font-size: 45px;
   letter-spacing: 10px;
   /*font-family: 'Poppins', sans-serif;*/
-  font-family: 'Major Mono Display', monospace;
+  font-family: "Major Mono Display", monospace;
   font-weight: bolder;
   text-transform: lowercase;
   text-align: center;
   color: black;
 }
-.mainheading:after{
-  content:'RAVI KUMAR SINGH';
+.mainheading:after {
+  content: "YOUR FULL NAME";
 }
-.mainheading:hover:after{
+.mainheading:hover:after {
   cursor: pointer;
   opacity: 1;
-  content:'A WEB DEVELOPER:)';
+  content: "A WEB DEVELOPER:)";
 }
 @media only screen and (max-width: 875px) {
-  .centerpart{
+  .centerpart {
     height: 250px;
     margin-top: 50px;
     padding-top: 0px;
   }
-  .subheading{
+  .subheading {
     font-size: 18px;
     letter-spacing: 2px;
   }
-  .mainheading{
+  .mainheading {
     font-size: 42px;
     letter-spacing: 0px;
   }
 }
 
-.lowerstrip{
-  height:250px;
+.lowerstrip {
+  height: 250px;
   background-color: rgba(46, 49, 49, 1);
-  box-shadow: 10px 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 10px 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
-.Contact{
-  text-align:right;
+.Contact {
+  text-align: right;
   font-size: 16px;
-  font-weight:lighter;
+  font-weight: lighter;
   font-family: "Roboto", sans-serif;
   padding-right: 150px;
   padding-top: 50px;
   letter-spacing: 5px;
-  color:white;
+  color: white;
 }
-.addressmob{
+.addressmob {
   font-family: "Roboto", sans-serif;
   letter-spacing: 3px;
   font-weight: lighter;
-  color:white;
+  color: white;
 }
-.emaila{
+.emaila {
   margin-top: 50px;
   margin-bottom: 0px;
   font-weight: lighter;
 }
-.id{
+.id {
   margin-top: 5px;
-  font-size:14px;
-  font-weight:lighter;
+  font-size: 14px;
+  font-weight: lighter;
   letter-spacing: 2px;
   color: rgba(41, 241, 195, 1);
   transition-property: all;
   transition-duration: 0.25s;
   transition-delay: 0.1s;
 }
-.add1{
+.add1 {
   margin-top: 20px;
   margin-bottom: 0px;
   font-weight: lighter;
 }
-.add2{
-  font-size:14px;
+.add2 {
+  font-size: 14px;
   margin-top: 5px;
   width: 75%;
-  font-weight:lighter;
+  font-weight: lighter;
   letter-spacing: 2px;
 }
-.Mob1{
-  margin-top:20px;
+.Mob1 {
+  margin-top: 20px;
   margin-bottom: 0px;
   font-weight: lighter;
 }
-.Mob2{
+.Mob2 {
   font-size: 15px;
-  margin-top:5px;
-  font-weight:lighter;
+  margin-top: 5px;
+  font-weight: lighter;
   letter-spacing: 2px;
   color: rgba(41, 241, 195, 1);
   transition-property: all;
   transition-duration: 0.25s;
   transition-delay: 0.1s;
 }
-.id:hover{
-  color: white;
-  cursor:pointer;
-  letter-spacing: 4px;
-}
-.Mob2:hover{
+.id:hover {
   color: white;
   cursor: pointer;
   letter-spacing: 4px;
 }
-.Socialconts{
+.Mob2:hover {
+  color: white;
+  cursor: pointer;
+  letter-spacing: 4px;
+}
+.Socialconts {
   display: flex;
   flex-wrap: wrap;
 }
-.social{
+.social {
   height: 30%;
   margin-top: 0px;
-  margin-bottom:0px;
+  margin-bottom: 0px;
   padding-top: 50px;
-  text-align:right;
+  text-align: right;
   font-size: 16px;
-  font-weight:lighter;
+  font-weight: lighter;
   font-family: "Roboto", sans-serif;
   letter-spacing: 3px;
-  color:white;
+  color: white;
 }
-.icons{
-  height:100px;
+.icons {
+  height: 100px;
 }
-.link1{
-  height:100px;
+.link1 {
+  height: 100px;
 }
-.link2{
+.link2 {
   height: 100px;
 }
 
-.git{
-  width:25px;
-  height:25px;
+.git {
+  width: 25px;
+  height: 25px;
   image-orientation: center;
-  filter:invert(100%);
+  filter: invert(100%);
   transition-property: all;
   transition-duration: 0.25s;
   transition-delay: 0.1s;
 }
-.linkedin{
-  width:25px;
-  height:25px;
+.linkedin {
+  width: 25px;
+  height: 25px;
   image-orientation: center;
-  filter:grayscale(100%);
+  filter: grayscale(100%);
   transition-property: all;
   transition-duration: 0.15s;
   transition-delay: 0.05s;
 }
-.git:hover, .linkedin:hover{
+.git:hover,
+.linkedin:hover {
   filter: none;
-  width:30px;
-  height:30px;
+  width: 30px;
+  height: 30px;
 }
 @media only screen and (max-width: 875px) {
-  .lowerstrip{
+  .lowerstrip {
     display: block;
-    height:auto;
+    height: auto;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 40px;
     padding-top: 40px;
   }
-  .Contact{
-    padding:0px;
+  .Contact {
+    padding: 0px;
     letter-spacing: 2px;
     text-align: left;
   }
-  .addressmob{
-    width:100%;
+  .addressmob {
+    width: 100%;
     height: auto;
   }
-  .emaila{
+  .emaila {
     margin-top: 20px;
     letter-spacing: 2px;
   }
-  .id{
+  .id {
     margin-bottom: 0px;
     letter-spacing: 2px;
   }
-  .add1,.add2,.Mob2,.Mob1{
+  .add1,
+  .add2,
+  .Mob2,
+  .Mob1 {
     letter-spacing: 2px;
   }
-  .Socialconts{
-    width:100%;
-    height:auto;
+  .Socialconts {
+    width: 100%;
+    height: auto;
   }
-  .icons{
-    height:auto;
+  .icons {
+    height: auto;
   }
-  .social{
+  .social {
     letter-spacing: 2px;
     padding-top: 15px;
     padding-bottom: 10px;
   }
-  a[target]{
+  a[target] {
     height: auto;
   }
 }
-.aboutstrip{
+.aboutstrip {
   background-color: rgba(41, 241, 195, 1);
 }
-.educationstrip{
+.educationstrip {
   background-color: rgba(41, 241, 195, 1);
 }
-.about{
-  height:100px;
-  padding-top:50px;
-  text-align:right;
+.about {
+  height: 100px;
+  padding-top: 50px;
+  text-align: right;
   font-size: 16px;
-  font-weight:bolder;
+  font-weight: bolder;
   font-family: "Roboto", sans-serif;
   padding-right: 150px;
-  color:rgba(46, 49, 49, 1);
+  color: rgba(46, 49, 49, 1);
   letter-spacing: 5px;
 }
-.aboutme{
-  margin:0px;
-  padding-top:50px;
-  font-weight:bolder;
+.aboutme {
+  margin: 0px;
+  padding-top: 50px;
+  font-weight: bolder;
   font-family: "Roboto", sans-serif;
   letter-spacing: 1px;
   font-size: 15px;
   padding-right: 20px;
 }
-.education{
-  height:90px;
-  padding-top:30px;
-  text-align:right;
+.education {
+  height: 90px;
+  padding-top: 30px;
+  text-align: right;
   font-size: 16px;
-  font-weight:bolder;
+  font-weight: bolder;
   font-family: "Roboto", sans-serif;
   padding-right: 150px;
-  color:rgba(46, 49, 49, 1);
+  color: rgba(46, 49, 49, 1);
   letter-spacing: 5px;
 }
-.eddetail{
-  height:90px;
+.eddetail {
+  height: 90px;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
-  font-weight:lighter;
+  font-weight: lighter;
   letter-spacing: 0.5px;
   font-size: 14px;
   padding-right: 20px;
-  color:rgba(46, 49, 49, 1);
+  color: rgba(46, 49, 49, 1);
 }
-.ed1{
-  margin-top:30px;
-  margin-bottom:0px;
+.ed1 {
+  margin-top: 30px;
+  margin-bottom: 0px;
   text-transform: uppercase;
   font-size: 14px;
   color: black;
   font-family: "Roboto", sans-serif;
   text-align: left;
 }
-.ed2{
-  margin-top:5px;
-  margin-bottom:0px;
+.ed2 {
+  margin-top: 5px;
+  margin-bottom: 0px;
 }
-.ed3{
-  margin-top:25px;
-  margin-bottom:0px;
+.ed3 {
+  margin-top: 25px;
+  margin-bottom: 0px;
   text-transform: uppercase;
   font-size: 14px;
   color: black;
-  font-family: "Roboto", sans-serif;;
+  font-family: "Roboto", sans-serif;
 }
-.ed4{
-  margin-top:5px;
-  margin-bottom:0px;
+.ed4 {
+  margin-top: 5px;
+  margin-bottom: 0px;
 }
-.ed5{
-  margin-top:25px;
-  margin-bottom:0px;
+.ed5 {
+  margin-top: 25px;
+  margin-bottom: 0px;
   text-transform: uppercase;
   color: black;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
 }
-.ed6{
-  margin-top:5px;
-  margin-bottom:0px;
+.ed6 {
+  margin-top: 5px;
+  margin-bottom: 0px;
 }
-.years{
+.years {
   padding-left: 50px;
 }
-.year,.edbutton{
-  margin:0px;
-  font-weight:bolder;
+.year,
+.edbutton {
+  margin: 0px;
+  font-weight: bolder;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.5px;
 }
-.edbutton{
-  border:0px;
+.edbutton {
+  border: 0px;
   background-color: rgba(46, 49, 49, 1);
   color: white;
   margin-top: 5px;
   font-weight: lighter;
 }
-.fall{
-  margin-top:30px;
+.fall {
+  margin-top: 30px;
 }
-.fall2{
-  margin-top:25px;
+.fall2 {
+  margin-top: 25px;
 }
-.fall3{
-  margin-top:20px;
+.fall3 {
+  margin-top: 20px;
 }
-.pdfhold{
+.pdfhold {
   padding-left: 50px;
   margin-top: 0px;
   display: flex;
   flex-wrap: wrap;
 }
-.pdf{
+.pdf {
   image-orientation: center;
   margin-left: 10px;
   margin-top: 50px;
-  width:18px;
-  height:18px;
+  width: 18px;
+  height: 18px;
   transition-property: all;
   transition-duration: 0.25s;
   transition-delay: 0.1s;
-  filter:invert(100%);
+  filter: invert(100%);
   float: right;
 }
-.resume{
+.resume {
   margin-top: 50px;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
-  font-weight:bolder;
-  letter-spacing: 1px
+  font-weight: bolder;
+  letter-spacing: 1px;
 }
-.pdf:hover{
-  filter:none;
-  width:25px;
-  height:25px;
+.pdf:hover {
+  filter: none;
+  width: 25px;
+  height: 25px;
 }
-a[target]{
+a[target] {
   text-decoration: none;
   color: inherit;
 }
-a[target]:hover{
+a[target]:hover {
   text-decoration: underline;
 }
 
-.classx{
+.classx {
   margin-top: 5px;
 }
 
 @media only screen and (max-width: 875px) {
-  .aboutstrip{
-    display: block;
-    width:100%;
-    height:127.2px;
-  }
-  .about{
-    width:100%;
-    height:50px;
-    text-align: left;
-    padding:30px 0px 0px 20px;
-    letter-spacing: 2px;
-  }
-  .aboutholder{
-    width:100%;
-    height:77.2px;
-  }
-  .aboutme{
-    text-align: left;
-    padding:10px 20px 0px 20px;
-
-  }
-  .pdfhold{
-    display: none;
-  }
-  .educationstrip{
+  .aboutstrip {
     display: block;
     width: 100%;
-    height:auto;
+    height: 127.2px;
   }
-  .education{
-    width:100%;
-    padding:20px 0px 0px 20px;
-    height:auto;
+  .about {
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    padding: 30px 0px 0px 20px;
+    letter-spacing: 2px;
+  }
+  .aboutholder {
+    width: 100%;
+    height: 77.2px;
+  }
+  .aboutme {
+    text-align: left;
+    padding: 10px 20px 0px 20px;
+  }
+  .pdfhold {
+    display: none;
+  }
+  .educationstrip {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .education {
+    width: 100%;
+    padding: 20px 0px 0px 20px;
+    height: auto;
     text-align: left;
     letter-spacing: 2px;
   }
-  .eddetail{
-    width:100%;
-    height:auto;
-    padding:0px 20px 0px 20px;
+  .eddetail {
+    width: 100%;
+    height: auto;
+    padding: 0px 20px 0px 20px;
   }
-  .ed1{
+  .ed1 {
     margin-top: 10px;
   }
-  .ed3,.ed5{
+  .ed3,
+  .ed5 {
     margin-top: 0px;
     padding-top: 10px;
   }
-  .educ{
+  .educ {
     padding-top: 0px;
   }
-  .years{
-    width:100%;
-    height:auto;
+  .years {
+    width: 100%;
+    height: auto;
     padding-left: 20px;
     font-weight: lighter;
   }
-  .fall,.fall2,.fall3{
+  .fall,
+  .fall2,
+  .fall3 {
     margin-top: 5px;
   }
-  .edstrip2,.edstrip3{
+  .edstrip2,
+  .edstrip3 {
     padding-top: 10px;
-    height:auto;
+    height: auto;
   }
-  .edbutton{
+  .edbutton {
     margin-top: 0px;
   }
-  .ed2,.ed4,.ed6{
+  .ed2,
+  .ed4,
+  .ed6 {
     color: black;
     font-weight: bolder;
   }
 }
 
-.skillset{
+.skillset {
   height: 220px;
   background-color: rgba(41, 241, 195, 1);
   font-family: "Roboto", sans-serif;
   /*background-image: linear-gradient(-90deg,#57BC90,#77C9D4);*/
 }
-#skill{
+#skill {
   padding-top: 0px;
   padding-right: 150px;
   text-align: right;
@@ -624,22 +643,22 @@ a[target]:hover{
   font-weight: bolder;
   letter-spacing: 5px;
 }
-.tskill{
-  margin-top:0px;
+.tskill {
+  margin-top: 0px;
   display: block;
 }
-.tskills{
+.tskills {
   margin-top: 0px;
   margin-left: 0px;
   margin-right: 150px;
   margin-bottom: 15px;
   font-size: 15px;
-  border:0px;
+  border: 0px;
   color: white;
   font-weight: lighter;
   background-color: inherit;
   width: 25%;
-  height:22px;
+  height: 22px;
   text-align: left;
   text-transform: uppercase;
   background-color: rgba(46, 49, 49, 1);
@@ -648,77 +667,77 @@ a[target]:hover{
   transition-duration: 0.25s;
   transition-delay: 0.1s;
 }
-.tskills:hover{
+.tskills:hover {
   text-align: right;
-  box-shadow: 10px 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 10px 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
-.skill1{
+.skill1 {
   width: 70%;
-
 }
-.skill2{
+.skill2 {
   width: 60%;
 }
-.skill3{
+.skill3 {
   width: 75%;
 }
-.skill4{
+.skill4 {
   width: 60%;
 }
-.skill5{
+.skill5 {
   width: 65%;
 }
-.skill1:after{
-  content:'HTML & CSS';
+.skill1:after {
+  content: "Skill-1";
 }
-.skill1:hover:after{
-  content:'70%';
+.skill1:hover:after {
+  content: "70%";
 }
-.skill2:after{
-  content:'JAVASCRIPT';
+.skill2:after {
+  content: "Skill-2";
 }
-.skill2:hover:after{
-  content:'60%';
+.skill2:hover:after {
+  content: "60%";
 }
-.skill3:after{
-  content:'C++';
+.skill3:after {
+  content: "Skill-3";
 }
-.skill3:hover:after{
-  content:'75%';
+.skill3:hover:after {
+  content: "75%";
 }
-.skill4:after{
-  content:'MySQL';
+.skill4:after {
+  content: "Skill-4";
 }
-.skill4:hover:after{
-  content:'60%';
+.skill4:hover:after {
+  content: "60%";
 }
-.skill5:after{
-  content:'DS & Algo';
+.skill5:after {
+  content: "Skill-5";
 }
-.skill5:hover:after{
-  content:'65%';
+.skill5:hover:after {
+  content: "65%";
 }
 @media only screen and (max-width: 875px) {
-  .skillset{
+  .skillset {
     display: block;
     height: auto;
     padding-top: 30px;
     padding-bottom: 30px;
   }
-  #skill{
+  #skill {
     padding-left: 20px;
     letter-spacing: 2px;
     padding-bottom: 15px;
     color: rgba(46, 49, 49, 1);
     text-align: left;
   }
-  .tskill{
-    width:100%;
-    height:auto;
+  .tskill {
+    width: 100%;
+    height: auto;
     padding-left: 20px;
   }
-  .tskills{
+  .tskills {
     margin-bottom: 10px;
   }
 }
